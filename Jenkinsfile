@@ -1,5 +1,5 @@
 pipeline {
-    agent {docker 'python'}
+    agent {dockerfile true}
     stages {
         stage('Hello') {
             steps {
