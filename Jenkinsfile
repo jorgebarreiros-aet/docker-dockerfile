@@ -8,9 +8,7 @@ pipeline {
         stage('Hello') {
             steps {
                 echo 'Hello World'
-                sh '''#!/usr/bin/python3
-name="Jenkins"
-print('Hello {} from Python!'.format(name))'''
+                sh 'python hello.py'
             }
         }
     }
